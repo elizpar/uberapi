@@ -8,11 +8,10 @@ var userLatitude
   , partyLongitude = -74.106663;
 
 navigator.geolocation.watchPosition(function(position) {
-    console.log(position);
-
-navigator.geolocation.watchPosition(function(position) {
     // Update latitude and longitude
+    console.log(position);
     userLatitude = position.coords.latitude;
     userLongitude = position.coords.longitude;
 });
+
 
